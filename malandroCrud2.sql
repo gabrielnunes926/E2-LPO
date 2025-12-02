@@ -1,0 +1,26 @@
+CREATE DATABASE malandro_crud;
+USE malandro_crud;
+SHOW tables;
+SELECT DATABASE();
+
+
+CREATE TABLE malandro(
+cpf VARCHAR(50)  PRIMARY KEY,
+estilo VARCHAR(100) NOT NULL,
+penteado VARCHAR(100) NOT NULL,
+joias VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS moto (
+    vin INT PRIMARY KEY,
+    cor VARCHAR(100) NOT NULL,
+    marca VARCHAR(100) NOT NULL,
+    peso INT
+);
+
+CREATE TABLE mulher(
+cpf VARCHAR(50) PRIMARY KEY,
+nome VARCHAR(100) NOT NULL,
+telefone INT(100) NOT NULL,
+endereco VARCHAR(200)
+);
